@@ -5,7 +5,7 @@ import GlobalForm from "../GlobalForm/form";
 export default function Modal({
   show,
   onClose,
-  children,
+  // children,
 }: {
   show: boolean;
   onClose: () => void;
