@@ -20,7 +20,7 @@ export default function GlobalForm() {
   const [error, setError] = useState(false);
 
 
-  const handleSubmit = async (e: any) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
     setError(false);
