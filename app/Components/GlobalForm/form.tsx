@@ -19,55 +19,7 @@ export default function GlobalForm() {
   const [submitted, setSubmitted] = useState(false);
   const [error, setError] = useState(false);
 
-  // const handleSubmit = async (e: any) => {
-  //   e.preventDefault();
-  //   setIsSubmitting(true);
-  //   // Basic required field check
-  //   if (
-  //     !firstName ||
-  //     !lastName ||
-  //     !phone ||
-  //     !email ||
-  //     !scamType ||
-  //     !amountLost ||
-  //     !message
-  //   ) {
-  //     setError(true);
-  //     return;
-  //   }
-  //   // Check email
-  //   if (!/^\S+@\S+\.\S+$/.test(email)) {
-  //     setError(true);
-  //     setIsSubmitting(false);
-  //     return;
-  //   }
 
-  //   // Check phone
-  //   if (!/^\d{10,}$/.test(phone)) {
-  //     setError(true);
-  //     setIsSubmitting(false);
-  //     return;
-  //   }
-  //   await addDoc(collection(db, "submissions"), {
-  //     firstName,
-  //     lastName,
-  //     phone,
-  //     email,
-  //     scamType,
-  //     amountLost,
-  //     message,
-  //   });
-  //   // Clear form
-  //   setFirstName("");
-  //   setLastName("");
-  //   setPhone("");
-  //   setEmail("");
-  //   setScamType("");
-  //   setAmountLost("");
-  //   setSubmitted(true);
-  //   setMessage("");
-  //   setIsSubmitting(false);
-  // };
   const handleSubmit = async (e: any) => {
     e.preventDefault();
     setIsSubmitting(true);
