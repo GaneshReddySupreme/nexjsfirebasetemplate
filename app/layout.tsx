@@ -28,7 +28,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${outfit.className} antialiased`}>
+      <body className={`${dmSans.className} ${outfit.className} antialiased`}>
         {/* <GlobalForm /> */}
         {children}
       </body>
